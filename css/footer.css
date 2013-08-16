@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#footer {
+position: relative;
+height: 363px;
+min-width: 960px;
+max-width: 1920px;
+margin: 0 auto;
+border-top: #ccc 5px solid;
+background: #727272 url(/theme/img/footer/bg_footer.jpg) center top no-repeat;
+}
+/* Content
+---------------------------------------------------------------------------------------------------- */
+#footer .content {
+padding-top: 40px;
+}
+#footer .content h4 {
+margin-bottom: 20px;
+color: #FFF;
+}
+#footer .content li {
+margin-bottom: 10px;
+}
+#footer .content li span {
+display: inline-block;
+width: 16px;
+height: 13px;
+background: url(/theme/img/sprite_vwplus.png) 0px -10px no-repeat;
+}
+.ie7 #footer .content li span {
+height: 16px;
+}
+#footer .content li a {
+color: #CFD7D9;
+text-decoration: none;
+}
+#footer .content li a:hover {
+color: #2274AC;
+}
+#footer .content p {
+color: #A2B0BE;
+margin-bottom: 20px;
+}
+/* Magazine
+---------------------------------------------------------------------------------------------------- */
+#footer .magazine .alpha {
+float: left;
+width: 120px;
+margin-right: 10px;
+}
+#footer .magazine .omega {
+position: relative;
+float: left;
+width: 130px;
+height: 159px;
+margin-left: 10px;
+}
+#footer .magazine .omega a {
+margin: 0;
+}
+#footer .magazine ul {
+position: absolute;
+left: 0;
+bottom: 0;
+}
+#footer .magazine li {
+float: left;
+margin: 0 10px 0 0;
+}
+#footer .magazine li span {
+display: inline-block;
+width: 32px;
+height: 32px;
+}
+#footer .magazine li span.fb {
+background: url(/theme/img/sprite_vwplus.png) 0px -34px no-repeat;
+}
+#footer .magazine li span.twitter {
+background: url(/theme/img/sprite_vwplus.png) -40px -34px no-repeat;
+}
+#footer .magazine li span.youtube {
+background: url(/theme/img/sprite_vwplus.png) -80px -34px no-repeat;
+}
+.ie7 #footer .magazine li span.fb,
+.ie7 #footer .magazine li span.twitter,
+.ie7 #footer .magazine li span.youtube {
+height: 32px;
+}
+/* Legal
+---------------------------------------------------------------------------------------------------- */
+#footer .legal {
+margin-top: 40px;
+}
+#footer .legal li {
+float: left;
+margin-top: 6px;
+}
+#footer .legal li a {
+color: #FFF;
+padding-right: 50px;
+text-decoration: none;
+}
+.fr #footer .legal li a {
+padding-right: 30px;
+}
+#footer .legal li a:hover {
+color: #2274AC;
+} 

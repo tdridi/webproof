@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* the Big images slideshow
+---------------------------------------------------------------------------------------------------- */
+.slide-viewport {
+position:relative;
+overflow:hidden;
+height:auto;
+margin:0 auto;
+text-align:center;
+}
+.map-arrow {
+cursor:pointer;
+}
+.slide-viewport .slide {
+position:relative;
+height:512px;
+}
+.slide-viewport .slide .row {
+padding-left:120px;
+}
+.slide-viewport .slide .column {
+padding-top:110px;
+}
+.slide-viewport .slide .slide-content-wrapper {
+display:table;
+height:500px;
+}
+.slide-viewport .slide .slide-content {
+display: table-cell;
+vertical-align: middle;
+overflow: hidden;
+padding:0 10px 50px 10px;
+}
+.slide-viewport .slide .slide-content-transparency {
+display: table-cell;
+vertical-align: middle;
+overflow: hidden;
+padding: 0 10px;
+/*padding: 90px 20px 20px 20px;*/
+background:url(/theme/img/slideshow/transp_gray.png) 0 0 repeat;
+}
+.slide-viewport .slide .slide-content-empty {
+display: table-cell;
+vertical-align: middle;
+overflow: hidden;
+padding: 0 10px;
+/*padding: 90px 20px 20px 20px;*/
+/*background:url(/theme/img/slideshow/transp_gray.png) 0 0 repeat;*/
+}
+.slide-viewport .slide h1 {
+text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+}
+.ie7 .slide-viewport .slide .slide-content,
+.ie7 .slide-viewport .slide .slide-content-transparency {
+padding-top:90px;
+}
+/*
+-----------------------------------------------------------------------------------------------------*/
+.slide-viewport .slide .slide-content-driving {
+display: table-cell;
+vertical-align: middle;
+overflow: hidden;
+padding: 0 10px;
+/*padding: 90px 20px 20px 20px;*/
+background:url(/theme/img/slideshow/transp_blue.png) 0 0 repeat;
+}
+.ie7 .slide-viewport .slide .slide-content,
+.ie7 .slide-viewport .slide .slide-content-driving {
+padding-top:90px;
+}
+/* slide-1 should always have z-index:2
+---------------------------------------------------------------------------------------------------- */
+.slide-viewport .slide-1 {
+position:absolute;
+left:-70px;
+z-index:2;
+}
+/* slide-2 should always have z-index:3
+---------------------------------------------------------------------------------------------------- */
+.slide-viewport .slide-2 {
+position:absolute;
+z-index:3;
+}
+/* slide-3, slide-4, etc should always have z-index:1
+---------------------------------------------------------------------------------------------------- */
+.slide-viewport .slide-3,
+.slide-viewport .slide-4,
+.slide-viewport .slide-5,
+.slide-viewport .slide-6,
+.slide-viewport .slide-7,
+.slide-viewport .slide-8,
+.slide-viewport .slide-9 {
+position:absolute;
+z-index:1;
+}
+/* Slides Background */
+/* guide-tour
+---------------------------------------------------------------------------------------------------- */
+.slide-viewport .guide-tour {
+background:url(/theme/img/slideshow/tutorial_slide.jpg) right top;
+color:#fff;
+}
+/* apple-harvest
+---------------------------------------------------------------------------------------------------- */
+.slide-viewport .bg-apple-harvest {
+background:url(/theme/img/slideshow/apple_harvest_1920x550.jpg) right top;
+color:#FFF;
+}
+.slide-viewport .bg-apple-harvest h1.fr {
+font-size: 2.5em; /* 40px / 16px */
+color:#FFF;
+}
+/* amusement-park
+---------------------------------------------------------------------------------------------------- */
+.slide-viewport .amusement-park {
+background:url(/theme/img/slideshow/rollercoaster_slide.jpg) right top;
+color:#FFF;
+}
+/* collection-60years
+---------------------------------------------------------------------------------------------------- */
+.slide-viewport .collection-60years {
+position:absolute;
+background:url(/theme/img/slideshow/60years_collection_slide.jpg) right top;
+color:#252525;
+}
+/* loyalty-slide
+---------------------------------------------------------------------------------------------------- */
+.slide-viewport .loyalty-slide {
+position:absolute;
+background:url(/theme/img/slideshow/loyalty_slide.jpg) right top;
+color:#fff;
+}
+/* Aftersales
+---------------------------------------------------------------------------------------------------- */
+.slide-viewport .bg-aftersales-1 {
+background:url(/theme/img/slideshow/aftersales_slide_golf.jpg) right top;
+color:#FFF;
+}
+.slide-viewport .bg-aftersales-2 {
+background:url(/theme/img/slideshow/aftersales_slide_passat.jpg) right top;
+color:#FFF;
+}
+.slide-viewport .bg-aftersales-3 {
+background:url(/theme/img/slideshow/aftersales_slide_tiguan.jpg) right top;
+color:#FFF;
+}
+/* Snowboard cross
+-------------------------------*/
+.slide-viewport .bg-snowboard-cross {
+background:url(/theme/img/slideshow/snowboard_1920x550.jpg) right top;
+color:#000;
+}
+/* Aftersales Winter
+-------------------------------*/
+.slide-viewport .bg-aftersales-winter {
+background: url(/theme/img/slideshow/aftersales_winter_1920x550.jpg) right top;
+color: #fff;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+.slide-viewport .slide div.arrow {
+position:absolute;
+left:-35px;
+height:512px;
+width:70px;
+outline: 0;
+}
+.slide-viewport .slide .arrow-effect {
+position:absolute;
+top:0;
+right:-35px;
+height:512px;
+width:70px;
+outline: 0;
+}
+.slide-viewport .slide .next-up {
+position:absolute;
+top:215px;
+right:40px;
+color:#fff;
+text-align:right;
+}
+.slide-viewport .slide .next-up.transparency {
+padding:10px;
+background:url(/theme/img/transp_gray.png) 0 0 repeat;
+-moz-border-radius:7px;
+-webkit-border-radius:7px;
+border-radius:7px;
+}
+#landing .slide-viewport .next-up p {
+margin-bottom:0px;
+}
+.slide-viewport .arrow-layer-up {
+position:absolute;
+bottom:0;
+width:100%;
+height:62px;
+background:url(/theme/img/landing/sprite_vwplus_landing.png) center top no-repeat;
+z-index:5;
+}
+.slide-1 .row {
+text-align:center;
+}
+.slide-1 .play-icon {
+width:68px;
+height:68px;
+background:url(/theme/img/sprite_vwplus.png) -152px -60px no-repeat;
+margin:0 auto 20px;
+cursor:pointer;
+}
+.slide-1 p.large {
+/*text-transform:uppercase;*/
+} 

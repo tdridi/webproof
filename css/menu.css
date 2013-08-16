@@ -1,0 +1,520 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Wrapper
+---------------------------------------------------------------------------------------------------- */
+#menu {
+position: fixed;
+top: 0px;
+z-index: 7000;
+min-width: 960px;
+max-width: 100%;
+width: 100%;
+height: 100px;
+margin: 0 auto;
+background: #fff url(../images/background-image.png) top center repeat-x ;
+
+}
+#menu .wrap {
+position: absolute;
+top: 0px;
+left: 0px;
+z-index: 2;
+width: 100%;
+height: 100px;
+background:  url(../images/background-image.png) no-repeat top center;
+}
+#menu .item {
+width: 940px;
+margin: 0 auto;
+}
+#menu .tray {
+position: absolute;
+top: 100px;
+width: 100%;
+z-index: 1;
+}
+/* Logo
+---------------------------------------------------------------------------------------------------- */
+#menu .logo {
+float: left;
+margin: 12px 30px 0 0;
+}
+/* Tool
+---------------------------------------------------------------------------------------------------- */
+#menu .tool {
+float: right;
+height: 24px;
+margin-top: 6px;
+}
+#menu .tool li {
+float: left;
+padding: 0 7px;
+vertical-align: bottom;
+color: #000;
+background: url(../img/menu/tool-splitter.png) top right no-repeat;
+}
+#menu .tool li:last-child {
+background: none;
+}
+.ie8 #menu .tool li.language,
+.ie7 #menu .tool li.language {
+background: none;
+}
+#menu .tool li a {
+color: #2274AC;
+text-decoration: none;
+}
+/* Main
+---------------------------------------------------------------------------------------------------- */
+#menu .main {
+height: 70px;
+margin-top: 0px;
+}
+#menu .main li {
+float: left;
+margin-right: 25px;
+}
+#menu .main li a {
+display: block;
+outline: none;
+text-decoration: none;
+}
+#menu .main h1 {
+margin-bottom: 5px;
+color: #111;
+font-size: 1.125em; /* 18px / 16px */
+line-height: 1em;
+text-transform: none;
+font-family: VWBold, Arial, Helvetica, sans-serif;
+}
+#menu .main p {
+color: #777;
+}
+#menu .main li.selected h1 {
+color: #2274AC;
+}
+#menu .main li.selected p {
+color: #444;
+}
+#menu .main li a:hover h1 {
+color: #2274AC;
+}
+/* Subnav
+---------------------------------------------------------------------------------------------------- */
+#menu .subnav {
+height: 40px;
+background: url(../img/menu/background-image.png) center -102px no-repeat;
+}
+#menu .subnav .items {
+position: relative;
+width: 940px;
+margin: 0 auto;
+}
+#menu .subnav .left {
+float: left;
+height: 40px;
+}
+#menu .subnav .right {
+float: right;
+height: 40px;
+background: url(../img/menu/background-subnav.png) repeat-x;
+}
+#menu .subnav .empty {
+height: 40px;
+overflow: hidden;
+background: url(../img/menu/background-subnav.png) repeat-x;
+}
+/* Subnav - Links
+---------------------------------------------------------------------------------------------------- */
+#menu .subnav ul.links {
+height: 40px;
+}
+#menu .subnav ul.links li {
+float: left;
+display: block;
+padding-right: 40px;
+background: url(../img/menu/background-subnav.png) center top no-repeat;
+}
+#menu .subnav ul.links li a {
+display: block;
+height: 40px;
+line-height: 2.5em; /* 40px / 16px */
+color: #999;
+outline: none;
+text-decoration: none;
+-webkit-text-shadow: 0px -1px 0px #000;
+-moz-text-shadow: 0px -1px 0px #000;
+text-shadow: 0px -1px 0px #000;
+}
+#menu .subnav ul.links li.selected {
+background: url(../img/menu/background-subnav.png) center -42px no-repeat;
+}
+#menu .subnav ul.links li a:hover {
+color: #ccc;
+}
+#menu .subnav ul.links li.selected a {
+color: #FFF;
+}
+/* Subnav - Buttons
+---------------------------------------------------------------------------------------------------- */
+#menu .subnav ul.buttons {
+height: 40px;
+background: url(../img/menu/background-subnav.png) center top no-repeat;
+}
+#menu .subnav ul.buttons li {
+position: relative;
+float: left;
+margin-right: 5px;
+}
+#menu .subnav ul.buttons a {
+position: relative;
+display: block;
+height: 32px;
+margin-top: 4px;
+padding-right: 12px;
+color: #FFF;
+outline: none;
+text-decoration: none;
+-webkit-text-shadow: 0px -1px 0px #000;
+-moz-text-shadow: 0px -1px 0px #000;
+text-shadow: 0px -1px 0px #000;
+background: url(../img/menu/accessories-subnav.png) no-repeat right -34px;
+}
+#menu .subnav ul.buttons a span {
+display: block;
+height: 32px;
+padding-left: 12px;
+font-size: 0.875em; /* 14px / 16px */
+line-height: 2.285714285714286em; /* 32px / 14px */
+background: url(../img/menu/accessories-subnav.png) no-repeat left 0;
+}
+#menu .subnav ul.buttons a div.arrow {
+position: absolute;
+top: 13px;
+right: 10px;
+width: 13px;
+height: 8px;
+background: url(../img/menu/accessories-subnav.png) no-repeat 0 -132px;
+}
+#menu .subnav ul.buttons li.menu-howto a {
+padding-right: 35px;
+}
+#menu .subnav ul.buttons li.menu-howto.selected a div.arrow {
+background: url(../img/menu/accessories-subnav.png) no-repeat -16px -132px;
+}
+/* Subnav - Switcher
+---------------------------------------------------------------------------------------------------- */
+#menu .subnav ul.switcher {
+float: right;
+height: 40px;
+margin-left: 5px;
+}
+#menu .subnav ul.switcher li {
+position: relative;
+float: left;
+}
+#menu .subnav ul.switcher li a {
+position: relative;
+display: block;
+height: 32px;
+margin-top: 4px;
+padding-right: 35px;
+color: #FFF;
+outline: none;
+text-decoration: none;
+-webkit-text-shadow: 0px -1px 0px #000;
+-moz-text-shadow: 0px -1px 0px #000;
+text-shadow: 0px -1px 0px #000;
+background: url(../img/menu/accessories-subnav.png) no-repeat right -34px;
+}
+#menu .subnav ul.switcher a span {
+display: block;
+height: 32px;
+padding-left: 40px;
+font-size: 0.875em; /* 14px / 16px */
+line-height: 2.285714285714286em; /* 32px / 14px */
+background: url(../img/menu/accessories-subnav.png) no-repeat left 0;
+}
+#menu .subnav ul.switcher a img.thumbnail {
+position: absolute;
+top: 4px;
+left: 4px;
+width: 25px;
+height: 25px;
+}
+#menu .subnav ul.switcher a div.arrow {
+position: absolute;
+top: 13px;
+right: 10px;
+width: 13px;
+height: 8px;
+background: url(../img/menu/accessories-subnav.png) no-repeat 0 -132px;
+}
+#menu .subnav ul.switcher a div.border {
+display: none;
+position: absolute;
+left: 1px;
+right: 1px;
+bottom: 0px;
+z-index: 3;
+height: 3px;
+background-color: #444;
+}
+/* dropdown */
+#menu .subnav ul.switcher li:hover div.arrow {
+background: url(../img/menu/accessories-subnav.png) no-repeat -16px -132px;
+}
+#menu .subnav ul.switcher li:hover ul.dropdown,
+#menu .subnav ul.switcher li:hover div.border {
+display: block;
+}
+#menu .subnav ul.switcher ul.dropdown {
+display: none;
+position: absolute;
+top: 33px;
+right: 0px;
+z-index: 2;
+width: 191px;
+padding: 6px;
+outline: none;
+border: 1px solid #525252;
+-webkit-border-radius: 4px;
+-webkit-border-top-right-radius: 0;
+-moz-border-radius: 4px;
+-moz-border-radius-topright: 0;
+border-radius: 4px;
+border-top-right-radius: 0;
+background: #444;
+}
+#menu .subnav ul.switcher ul.dropdown li {
+float: none;
+}
+#menu .subnav ul.switcher ul.dropdown li a {
+display: block;
+height: 30px;
+margin-top: 0px;
+padding-right: 8px;
+color: #CCC;
+text-decoration: none;
+background: none;
+}
+#menu .subnav ul.switcher ul.dropdown li:hover > a,
+#menu .subnav ul.switcher ul.dropdown li.current > a {
+color: #FFF;
+}
+#menu .subnav ul.switcher ul.dropdown li a span {
+display: block;
+height: 30px;
+padding-left: 8px;
+font-size: 0.875em; /* 14px / 16px */
+line-height: 2.357142857142857em; /* 33px / 14px */
+background: none;
+}
+#menu .subnav ul.switcher ul.dropdown li:hover > a {
+background: url(../img/menu/accessories-subnav.png) no-repeat right -100px;
+}
+#menu .subnav ul.switcher ul.dropdown li:hover > a span {
+background: url(../img/menu/accessories-subnav.png) no-repeat left -68px;
+}
+/* Subnav - Mileage
+---------------------------------------------------------------------------------------------------- */
+#menu .subnav ul.mileage {
+float: right;
+height: 40px;
+margin-left: 5px;
+}
+#menu .subnav ul.mileage li {
+position: relative;
+float: left;
+}
+#menu .subnav ul.mileage li a {
+position: relative;
+display: block;
+height: 32px;
+margin-top: 4px;
+padding-right: 7px;
+color: #FFF;
+text-decoration: none;
+-webkit-text-shadow: 0px -1px 0px #000;
+-moz-text-shadow: 0px -1px 0px #000;
+text-shadow: 0px -1px 0px #000;
+background: url(../img/menu/accessories-subnav.png) no-repeat right -34px;
+}
+.ie7 #menu .subnav ul.mileage li a {
+max-width: 200px;
+}
+#menu .subnav ul.mileage a span {
+display: block;
+height: 32px;
+padding-left: 12px;
+font-size: 0.875em; /* 14px / 16px */
+line-height: 2.357142857142857em; /* 33px / 14px */
+background: url(../img/menu/accessories-subnav.png) no-repeat left 0;
+}
+#menu .subnav ul.mileage a div.border {
+display: none;
+position: absolute;
+left: 1px;
+right: 1px;
+bottom: 0px;
+z-index: 3;
+height: 3px;
+background-color: #444;
+}
+/* dropdown */
+#menu .subnav ul.mileage li:hover ul.dropdown,
+#menu .subnav ul.mileage li:hover div.border {
+display: block;
+}
+#menu .subnav ul.mileage ul.dropdown {
+display: none;
+position: absolute;
+top: 33px;
+right: 0px;
+z-index: 2;
+width: 232px;
+padding: 6px 0 6px 6px;
+border: 1px solid #525252;
+-webkit-border-radius: 4px;
+-webkit-border-top-right-radius: 0;
+-moz-border-radius: 4px;
+-moz-border-radius-topright: 0;
+border-radius: 4px;
+border-top-right-radius: 0;
+background: #444;
+}
+#menu .subnav ul.mileage a label {
+float: left;
+}
+#menu .subnav ul.mileage p {
+color: #959595;
+font-size: 11px;
+line-height: 14px;
+margin: 4px 0 6px 0;
+}
+/* input */
+#menu .subnav ul.mileage a div.input_mileage {
+position: relative;
+float: right;
+margin: 5px 0 0 5px;
+}
+#menu .subnav ul.mileage div.input_mileage,
+#menu .subnav ul.mileage div.input_mileage_range {
+position: relative;
+width: 110px;
+height: 22px;
+background: url(../img/menu/accessories-subnav.png) no-repeat -32px -132px;
+}
+#menu .subnav ul.mileage input[type="text"] {
+position: absolute;
+top: 3px;
+left: 4px;
+width: 80px;
+height: 18px;
+margin: 0;
+padding: 0;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+border: none;
+color: #555;
+background: #FFF;
+text-align: right;
+vertical-align: middle;
+font-size: 14px;
+line-height: 16px;
+font-family:  Verdana, Geneva, sans-serif;
+}
+/* select */
+#menu .subnav ul.mileage select {
+-webkit-appearance: none;
+-moz-appearance: none;
+height: 22px;
+width: 110px;
+margin: 0;
+padding: 3px 2px 1px 2px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+border: none;
+color: #555;
+outline: none;
+-moz-outline: none;
+vertical-align: top;
+font-size: 13px;
+line-height: 16px;
+font-family:  Verdana, Geneva, sans-serif;
+background: #FFF url(../img/menu/accessories-subnav.png) no-repeat -144px -132px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+form select {
+padding-right: 22px;
+}
+}
+#menu .subnav ul.mileage div.select_mileage_range_period {
+position: absolute;
+top: 0px;
+left: 116px;
+}
+#menu .subnav ul.mileage div.select_mileage_range_period:before {
+content: "";
+}
+#menu .subnav ul.mileage div.select_mileage_range_period:after {
+content: "";
+pointer-events: none;
+display: block;
+position: absolute;
+top: 1px;
+right: 1px;
+width: 24px;
+height: 28px;
+background: url(../img/menu/accessories-subnav.png) no-repeat -256px -132px;
+}​
+.ie9 #menu .subnav ul.mileage div.select_mileage_range_period:before,
+.ie9 #menu .subnav ul.mileage div.select_mileage_range_period:after {
+display: none;
+}
+/* button */
+#menu .subnav ul.mileage button {
+height: 22px;
+width: 227px;
+margin: 0;
+font-size: 14px;
+line-height: 22px;
+font-family: Verdana,Geneva,sans-serif;
+}
+/* Sub-Nav
+---------------------------------------------------------------------------------------------------- */
+/*#menu .sub-nav {
+height: 40px;
+background: url(../img/menu/background-image.png) center -102px no-repeat;
+}
+#menu .sub-nav .menu-left {
+float: left;
+}
+#menu .sub-nav .menu-right {
+overflow: hidden;
+height: 40px;
+text-align: right;
+background: url(../img/menu/background-subnav.png) repeat-x;
+}
+#menu .sub-nav li {
+display: block;
+float: left;
+padding-right: 40px;
+background: url(../img/menu/background-subnav.png) center top repeat-x;
+}
+#menu .sub-nav li.selected {
+background: url(../img/menu/background-subnav.png) center -42px no-repeat;
+}
+#menu .sub-nav li a {
+display: block;
+height: 40px;
+line-height: 40px;
+color: #999;
+text-decoration: none;
+}
+#menu .sub-nav li.selected a {
+color: #FFF;
+}*/ 

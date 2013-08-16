@@ -1,0 +1,602 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Lightbox for account settings
+---------------------------------------------------------------------------------------------------- */
+#lightbox.account-settings {
+width:900px;
+}
+#lightbox.account-settings .lightbox-tabs li{
+float:left;
+padding:18px 15px 18px;
+font-family:  Arial, Helvetica, sans-serif;
+font-size:1.125em; /* 18px / 16px */
+line-height: 1em; /* Because webkit & mozilla rendering engines implement line height differently */
+color:#999999;
+text-shadow:1px 1px #F7F7F7;
+cursor:pointer;
+}
+.ie9 #lightbox.account-settings .lightbox-tabs li{
+padding:18px 15px 19px;
+}
+#lightbox.account-settings .lightbox-tabs li.selected {
+background:#fff;
+color:#252525;
+}
+#lightbox.account-settings .lightbox-tabs li.profile-tab.selected {
+border-top-left-radius: 7px;
+-moz-border-radius-topleft: 7px; /*FF*/
+}
+/* for the account settings lightbox, we set the grid's row width smaller = 880px
+---------------------------------------------------------------------------------------------------- */
+#lightbox.account-settings .row {
+width: 880px;
+margin: 0 auto 20px;
+overflow: hidden;
+}
+#lightbox.account-settings .row .row {
+width: 100%;
+}
+#lightbox.account-settings .row .row .column{
+margin:0;
+}
+/* General styles for the 5 Tab Contents
+---------------------------------------------------------------------------------------------------- */
+#lightbox.account-settings .lightbox-tabs-content{
+position:relative;
+height:300px;
+padding:10px 0 20px;
+}
+#lightbox.account-settings .lightbox-tabs-content > div {
+position:absolute;
+z-index:-1;
+display:none;
+}
+#lightbox.account-settings .lightbox-tabs-content div.selected {
+position:absolute;
+z-index:10;
+display:block;
+}
+#lightbox.account-settings .lightbox-tabs-content .submit {
+position:relative;
+}
+#lightbox.account-settings .lightbox-tabs-content .submit button {
+position:absolute;
+right:13px;
+}
+#lightbox.account-settings .lightbox-tabs-content .submit span.submit-message {
+display:none;
+position:absolute;
+top:10px;
+right:200px;
+color:#2274ac;
+}
+.ie7 #lightbox.account-settings .lightbox-tabs-content .submit span.submit-message {
+right:210px;
+}
+.ie7 #lightbox.account-settings .lightbox-tabs-content .submit {
+top:-5px;
+}
+.lightbox-tabs-content .profile,
+.lightbox-tabs-content .lifestyle,
+.lightbox-tabs-content .communication{
+border-top:1px #ccc solid;
+padding-top:20px;
+}
+/* Profile tab content
+---------------------------------------------------------------------------------------------------- */
+.profile p {
+font-family: Verdana, Geneva, sans-serif;
+color:#2274ac;
+margin:0 0 5px 5px;
+}
+.profile p span {
+font-family:'VWBook', Verdana, Geneva, sans-serif;
+}
+.profile a.change-password {
+padding-left:5px;
+color:#252525;
+line-height:30px;
+text-decoration:underline;
+cursor:pointer;
+}
+.profile a.change-password:hover {
+color:#2274ac;
+}
+.profile select.year { width:114px; }
+.profile select.month {width:119px; }
+.profile select.day { width:111px; }
+.profile select.title { width:86px }
+.profile select.province {width:111px; }
+.profile input.firstname, .profile input.lastname { width:152px; }
+.profile input.email { width:430px; }
+.profile input.address { width:350px; }
+.profile input.city{ width:227px; }
+.profile input.postal { width:96px; }
+.profile input.phone { width:224px; }
+.profile .password-box {
+display:none;
+}
+.ie7 .profile input.address { width:353px; }
+.ie7 .profile input.phone { width:234px; }
+/* My Car tab content
+---------------------------------------------------------------------------------------------------- */
+.lightbox-tabs-content .mycars {
+border-top:1px #ccc solid;
+}
+.mycar-settings-form .left-280 {
+background:#ebebeb;
+float: left;
+display: inline;
+width:280px;
+height:513px;
+border-right:1px #ccc solid;
+padding:15px 0 0 10px;
+overflow:visible;
+}
+.mycar-settings-form .right-565 {
+float:left;
+display:inline;
+margin-left:15px;
+width:565px;
+height:509px;
+padding-top:15px;
+margin-right:0;
+}
+.mycar-settings-form .car-box {
+width:250px;
+margin-left:10px;
+border:1px #ccc solid;
+background:#fff;
+-moz-border-radius:7px;
+-webkit-border-radius:7px;
+border-radius:7px;
+}
+.mycar-settings-form .car-box h5,
+.mycar-settings-form .car-box .vin-sirius {
+padding:12px;
+}
+.mycar-settings-form .car-box .vin-sirius {
+font-size: 0.875em; /* 14px / 16px */
+}
+.mycar-settings-form .car-box .vin-sirius .vin-label {
+font-weight:bold;
+}
+.mycar-settings-form .car-box img.mycar-no-vin {
+padding:50px 0;
+}
+.mycar-settings-form .switcher {
+margin:10px 7px;
+}
+.mycar-settings-form .switcher h5 {
+margin:0 0 10px 10px;
+}
+.mycar-settings-form .switcher ul {
+margin:0 11px 0 4px;
+}
+.mycar-settings-form .switcher li {
+position:relative;
+}
+.mycar-settings-form .switcher li.current {
+background:#c5c5c5;
+}
+.mycar-settings-form .switcher li a {
+color:#252525;
+text-decoration:none;
+padding:10px;
+display:inline-block;
+}
+.mycar-settings-form .switcher li a span {
+width:6px;
+height:13px;
+display:inline-block;
+margin-right:10px;
+background:url(/theme/img/sprite_vwplus.png) 0px -14px no-repeat;
+vertical-align:middle;
+}
+.mycar-settings-form .switcher button.remove {
+display:none;
+position:absolute;
+right:10px;
+top:10px;
+margin:0;
+padding:0;
+width:18px;
+height:18px;
+background:url(/theme/img/sprite_vwplus.png) -26px -160px no-repeat;
+vertical-align:middle;
+}
+.mycar-settings-form .switcher li.current > button.remove {
+display:block;
+}
+.mycar-settings-form .switcher button#add-car {
+width:250px;
+}
+.switcher form.confirm-remove-car {
+display:none;
+padding:0 10px 10px 10px;
+}
+.mycar-settings-form .fields {
+margin-bottom:20px;
+}
+#lightbox.account-settings .mycar-settings-form .property p {
+margin:0 0 0 5px;
+}
+.ie7 input.mileage, .ie7 label.mileage_range_period {
+float:left
+}
+.ie7 label.mileage_range {
+display:block;
+padding-top:20px;
+}
+.mycar-settings-form .field-radio {
+position: relative;
+float: left;
+width: 180px;
+height: 25px;
+margin-left:6px;
+}
+.mycar-settings-form label.blue,
+.mycar-settings-form p.blue {
+font-family: Verdana, Geneva, sans-serif;
+color:#2274ac;
+margin-left:5px;
+}
+.ie9 .mycar-settings-form input[type="radio"] + label.property:before,
+.ie9 .mycar-settings-form input[type="checkbox"] + label.property:before {
+margin-left:-35px;
+}
+#lightbox.account-settings .mycar-settings-form .submit {
+margin-right:0;
+}
+.mycar-settings-form select.mileage_range_period { width:110px; }
+.mycar-settings-form select.month { width:125px; }
+.mycar-settings-form select.year { width:95px; }
+.mycar-settings-form select.property_type {width:240px;}
+.mycar-settings-form select.how-long-lease {width:130px;}
+.mycar-settings-form .lease,
+.mycar-settings-form #property-type-lease,
+.mycar-settings-form #property-end-lease {
+display:none;
+}
+.mycar-settings-form .right-565 .add-car h4 {
+margin:0 0 5px 4px;
+color:#2274ac;
+}
+.mycar-settings-form .right-565 .add-car p.few-minutes {
+margin:0 0 20px 4px;
+}
+.mycar-settings-form .right-565 .add-car .field {
+position:relative;
+float:left;
+width:250px;
+}
+.mycar-settings-form .right-565 .add-car p.where-title {
+font-family:  Verdana, Geneva, sans-serif;
+color:#2274ac;
+}
+.mycar-settings-form .right-565 .add-car .where-find {
+margin: 10px 0 0 4px;
+}
+.mycar-settings-form .right-565 .add-car input {
+width:220px;
+}
+.mycar-settings-form .right-565 .add-car .where-find ul {
+list-style:disc;
+margin: 0 0 10px 20px;
+}
+/* My Dealer tab content
+---------------------------------------------------------------------------------------------------- */
+/* general styles */
+.lightbox-tabs-content .dealer {
+border-top:1px #ccc solid;
+padding-top:10px;
+}
+#lightbox.account-settings .dealer .row {
+margin: 0 auto 10px;
+}
+#lightbox.account-settings .dealer .column {
+margin:0px 20px;
+padding-top:10px;
+}
+#lightbox.account-settings .dealer .column .column {
+margin:0;
+padding:5px 0 0 20px;
+}
+.dealer .column.border-top {
+border-top:1px #ccc solid;
+}
+.dealer .column.grid_10 {
+width:820px;
+}
+.dealer .links {
+margin-bottom:15px;
+}
+.dealer .links a {
+margin:5px 15px 0 0;
+color:#252525;
+}
+.dealer .links a:hover {
+color:#2274ac;
+}
+.dealer h5 {
+color:#2274ac;
+}
+.ie7 .dealer button.btn-small.en {
+width:240px;
+}
+.ie7 .dealer button.btn-small.fr {
+width:300px;
+}
+/* For the scrollbar
+---------------------------------------------------------------------------------------------------- */
+.dealer .viewport {
+width:840px;
+height:460px;
+overflow:hidden;
+position:relative;
+}
+.dealer .overview {
+list-style: none;
+position: absolute;
+left: 0;
+top: 0;
+padding: 0;
+margin: 0;
+}
+.dealer .scrollbar{
+background: #e0e0e0;
+position: relative;
+float: right;
+width: 15px;
+margin:10px;
+}
+.dealer .track {
+height: 460px;
+width:13px;
+position: relative;
+padding: 0 1px;
+}
+.dealer .thumb {
+background: transparent url(/theme/img/lightbox/scrollbar-blue.png) no-repeat 50% 100%;
+height: 40px;
+width: 25px;
+cursor: pointer;
+overflow: hidden;
+position: absolute;
+top: 0;
+left: -5px;
+}
+.dealer .thumb .end {
+overflow: hidden;
+height: 5px;
+width: 25px;
+}
+.dealer .disable {
+display: none;
+}
+/* My Dealer sub-nav
+---------------------------------------------------------------------------------------------------- */
+.dealer .sub-nav-dealer {
+height: 40px;
+width:880px;
+}
+.dealer .sub-nav-dealer .menu-left {
+float: left;
+}
+.dealer .sub-nav-dealer .menu-right {
+overflow: hidden;
+height: 40px;
+text-align: right;
+background: url(/theme/img/menu/background-subnav.png) repeat-x;
+}
+.dealer .sub-nav-dealer li {
+display: block;
+float: left;
+padding:0 20px;
+height: 40px;
+line-height: 40px;
+background: url(/theme/img/menu/background-subnav.png) center top repeat-x;
+color:#999;
+cursor:pointer
+}
+.dealer .sub-nav-dealer li.selected {
+background: url(/theme/img/menu/background-subnav.png) center -84px no-repeat;
+color: #FFF;
+}
+/* My Dealer - my-dealership tab content
+---------------------------------------------------------------------------------------------------- */
+.dealer .my-dealership {
+width:880px;
+height:470px;
+}
+.dealer .my-dealership .title-map h3 {
+margin: 5px 0;
+color:#2274ac;
+font-size: 1.5em;
+line-height: 1.05em;
+}
+.dealer .my-dealership .address {
+position:relative;
+margin:5px 0 10px 0;
+}
+.dealer .my-dealership .address .remove {
+position:absolute;
+top:-4px;
+right:0;
+}
+.dealer .my-dealership .address .remove button {
+margin:0;
+padding:0;
+height:18px;
+font-family:'VWBook', Verdana, Geneva, sans-serif;
+font-size:0.875em; /*14px / 16px */
+line-height: 1.285714285714286em; /* 18px / 14px */
+background:#fff;
+}
+.dealer .my-dealership .address .remove-dealer span {
+width:18px;
+height:18px;
+display:inline-block;
+margin-left:5px;
+background:url(/theme/img/sprite_vwplus.png) -26px -160px no-repeat;
+vertical-align:middle;
+}
+.dealer .my-dealership .current-promotions ul {
+list-style:disc;
+}
+.dealer .my-dealership a.no-dealer-find {
+text-decoration:underline;
+cursor:pointer;
+}
+/* My Dealer - find-dealership tab content
+---------------------------------------------------------------------------------------------------- */
+.dealer .find-dealership {
+display:none;
+width:880px;
+height:470px;
+}
+.dealer .find-dealership .row {
+860px;
+}
+.dealer .find-dealership .search {
+margin:5px 0 20px;
+}
+.dealer .find-dealership .search span {
+font-family: Verdana, Geneva, sans-serif;
+}
+.dealer .find-dealership .search-label {
+width:80px;
+float:left;
+margin-left:5px;
+}
+.dealer .find-dealership .search-label.fr {
+width:100px;
+}
+.dealer .find-dealership .search-list {
+width:300px;
+float:left;
+}
+.dealer .find-dealership .search-list ul {
+padding-top:1px;
+}
+.dealer .find-dealership .search-list li {
+float:left;
+margin-right:20px;
+cursor:pointer;
+}
+.dealer .find-dealership .search-list li.selected {
+color:#2274ac;
+}
+.dealer .search input.postal {
+width:120px;
+}
+.dealer .search select.distance {
+width:120px;
+}
+.dealer .find-dealership .results {
+margin-left:4px;
+}
+.dealer .find-dealership .results h4 {
+font-size: 1em;
+margin-bottom:15px;
+color:#2274ac;
+}
+.dealer .find-dealership .result {
+padding-bottom:10px;
+border-bottom:#ccc 1px solid;
+margin-bottom:10px;
+}
+.dealer .find-dealership .result-image {
+width:200px;
+float:left;
+margin-right:20px;
+padding-top:2px;
+}
+.dealer .find-dealership .result-content {
+width:500px;
+float:left;
+}
+.dealer .find-dealership .result-content .starred {
+font-family: Verdana, Geneva, sans-serif;
+line-height:1.875em; /*30px / 16px */
+color:#000;
+}
+.dealer .find-dealership .result-content .links {
+position:relative;
+width:610px;
+}
+.dealer .find-dealership .result-content .links a.website{
+position:absolute;
+top:0;
+right:0;
+}
+/* Lifestyle tab content
+---------------------------------------------------------------------------------------------------- */
+#lightbox.account-settings .lifestyle .row {
+margin-bottom:0;
+}
+#lightbox.account-settings .lifestyle .option {
+position: relative;
+float: left;
+width: 200px;
+height: 25px;
+margin-left:6px;
+}
+#lightbox.account-settings .lifestyle .custom {
+position: relative;
+float: left;
+width: 100%;
+margin:2px 0 0 10px;
+}
+#lightbox.account-settings .lifestyle .question-1,
+#lightbox.account-settings .lifestyle .question-2 {
+margin-bottom:25px;
+}
+.lifestyle p {
+font-family: Verdana, Geneva, sans-serif;
+color:#2274ac;
+margin:0 0 5px 10px;
+}
+.lifestyle .option-9 {
+width: 200px;
+}
+.lifestyle .custom input[type="text"] {
+width: 250px;
+}
+.lifestyle label {
+cursor:pointer;
+}
+.lifestyle .question-3 .family {
+padding-left:4px;
+}
+.lifestyle .question-3 select {
+width:70px;
+}
+/* Styles for communication tab content
+---------------------------------------------------------------------------------------------------- */
+.communication .column {
+position:relative;
+}
+.communication p {
+font-family: Verdana, Geneva, sans-serif;
+color:#2274ac;
+margin:0 0 5px 4px;
+}
+#lightbox.account-settings .communication .row.communication-channels {
+margin-bottom:0;
+}
+.communication label.title {
+font-family: Verdana, Geneva, sans-serif;
+margin-left:4px;
+line-height:30px;
+}
+.communication select.language {
+width:98px;
+}
+.ie7 #lightbox.account-settings .communication .row .row {
+height:30px;
+}
+.ie9 .communication .submit {
+top:-5px;
+} 

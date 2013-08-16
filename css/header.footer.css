@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Menu - logoff version
+---------------------------------------------------------------------------------------------------- */
+#menu .menu-logoff {
+position: absolute;
+top: 0px;
+left: 0px;
+z-index: 2;
+width: 100%;
+height: 100px;
+background:  url(../images/background-image.png) top center no-repeat ;
+}
+#menu .menu-logoff .row {
+overflow:visible;
+}
+/* lang-switcher
+---------------------------------------------------------------------------------------------------- */
+#menu .menu-logoff .lang-switcher {
+width:100%;
+text-align:right;
+margin-top:6px;
+}
+#menu .menu-logoff .lang-switcher a {
+color:#2274AC;
+}
+/* Menu
+---------------------------------------------------------------------------------------------------- */
+#menu .menu-logoff .menu-form {
+position:relative;
+padding-top:8px;
+color:#555555;
+}
+/* Div that contains the Logo
+---------------------------------------------------------------------------------------------------- */
+#menu .menu-logoff .logo-logoff {
+width:200px;
+margin-right:20px;
+}
+#menu .menu-logoff .logo-logoff .logo {
+margin-right:0px;
+}
+/* Div that contains Label Already a member?
+---------------------------------------------------------------------------------------------------- */
+#menu .menu-logoff .label {
+text-align:right;
+margin-right:0px;
+}
+#menu .menu-logoff label.member {
+font-weight:bold;
+line-height: 40px;
+vertical-align: middle;
+}
+/* Login form
+---------------------------------------------------------------------------------------------------- */
+#menu .menu-logoff .form {
+font-size: 0.875em; /* 14px / 16px */
+overflow:visible;
+}
+#menu .menu-logoff .field {
+position:relative;
+float:left;
+}
+#menu .menu-logoff input.email { width:200px; }
+#menu .menu-logoff input.email.fr { width:180px; }
+#menu .menu-logoff input.password { width:150px; }
+#menu .menu-logoff input.password.fr { width:104px; }
+#menu .menu-logoff .remember-field {
+position:relative;
+width:232px;
+float:left;
+}
+#menu .menu-logoff .remember-field.fr {
+width:212px;
+}
+#menu .menu-logoff label.remember {
+color:#898989;
+cursor:pointer;
+}
+#menu .menu-logoff .forgot-link {
+width:200px;
+float:left;
+margin-top:5px;
+}
+#menu .menu-logoff .forgot-link a {
+color:#2274ac;
+}
+#menu .menu-logoff button {
+position:absolute;
+top:8px;
+right:0;
+}
+.ie7 #menu .menu-logoff button.fr {
+width:152px;
+}
+.ie7 #menu .menu-logoff button {
+margin-top:5px;
+}
+.ie7 #menu .menu-logoff .remember-field {
+width:242px;
+z-index:1;
+}
+.ie7 #menu .menu-logoff .remember-field.fr {
+width:222px;
+z-index:1;
+}
+/* Footer - logoff version
+---------------------------------------------------------------------------------------------------- */
+#wrapper {
+margin:0px auto -70px !important; /* Overwrite the margin-bottom of #wrapper to footer logoff case */
+}
+#footer-push {
+height:70px !important; /* Overwrite the height of footer-push to footer logoff case */
+}
+#footer-logoff {
+height: 70px;
+background: #727272 url(/theme/img/footer/bg_footer.jpg) center top no-repeat;
+}
+#footer-logoff .row {
+padding-top: 22px;
+}
+#footer-logoff ul {
+margin-top: 5px;
+}
+#footer-logoff li {
+display: inline;
+}
+#footer-logoff li a {
+color: #FFF;
+padding-right: 50px;
+text-decoration: none;
+}
+#footer-logoff ul.fr li a {
+padding-right: 30px;
+}
+#footer-logoff li a:hover {
+color: #2274AC;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+#menu {
+position: absolute;
+}
+}
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+#menu {
+position: absolute;
+}
+}

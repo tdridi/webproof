@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* lightbox template styles
+---------------------------------------------------------------------------------------------------- */
+#transparency {
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:9000;
+background:url(/theme/img/lightbox/transparency_60_black.png) 0 0 repeat;
+display:none;
+}
+#lightbox {
+position: fixed;
+top: 200px;
+z-index: 9001;
+background: url(/theme/img/lightbox/transp_white_lightbox.png) 0 0 repeat;
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+border-radius:10px;
+border:#ccc 1px solid;
+display:none;
+}
+#lightbox .inside {
+margin:10px;
+}
+#lightbox .button-close {
+width:42px;
+height:42px;
+position:absolute;
+top:-20px;
+right:-20px;
+background:url(/theme/img/sprite_vwplus.png) -154px -14px no-repeat;
+cursor:pointer;
+}
+#lightbox .lightbox-title {
+padding:20px;
+background:#fff;
+border-top-left-radius: 7px;
+border-top-right-radius: 7px;
+-moz-border-radius-topleft: 7px; /*FF*/
+-moz-border-radius-topright: 7px; /*FF*/
+overflow:hidden;
+}
+#lightbox .lightbox-content {
+padding:20px;
+background:#dededf;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 7px;
+-moz-border-radius-bottomleft: 7px; /*FF*/
+-moz-border-radius-bottomright: 7px; /*FF*/
+color:#545454;
+}
+#lightbox .lightbox-tabs {
+height:54px;
+background: #dfdfdf;
+background-image: linear-gradient(top, #dfdfdf 23%, #cccccc 100%);
+background-image: -o-linear-gradient(top, #dfdfdf 23%, #cccccc 100%);
+background-image: -moz-linear-gradient(top, #dfdfdf 23%, #cccccc 100%);
+background-image: -webkit-linear-gradient(top, #dfdfdf 23%, #cccccc 100%);
+background-image: -ms-linear-gradient(top, #dfdfdf 23%, #cccccc 100%);
+background-image: -webkit-gradient(
+linear,
+left top,
+left bottom,
+color-stop(0.23, #dfdfdf),
+color-stop(1.02, #cccccc)
+);
+border-top-left-radius: 7px;
+border-top-right-radius: 7px;
+-moz-border-radius-topleft: 7px; /*FF*/
+-moz-border-radius-topright: 7px; /*FF*/
+}
+.ie9 #lightbox .lightbox-tabs {
+height:55px;
+}
+#lightbox .lightbox-tabs-content {
+padding:20px;
+background:#fff;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 7px;
+-moz-border-radius-bottomleft: 7px; /*FF*/
+-moz-border-radius-bottomright: 7px; /*FF*/
+color:#545454;
+}
