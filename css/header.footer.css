@@ -18,9 +18,9 @@ overflow:visible;
 /* lang-switcher
 ---------------------------------------------------------------------------------------------------- */
 #menu .menu-logoff .lang-switcher {
-width:100%;
 text-align:right;
 margin-top:6px;
+padding-right:6px;
 }
 #menu .menu-logoff .lang-switcher a {
 color:#2274AC;
@@ -35,11 +35,12 @@ color:#555555;
 /* Div that contains the Logo
 ---------------------------------------------------------------------------------------------------- */
 #menu .menu-logoff .logo-logoff {
-width:200px;
+width:300px;
 margin-right:20px;
 }
 #menu .menu-logoff .logo-logoff .logo {
 margin-right:0px;
+margin-top:0px;
 }
 /* Div that contains Label Already a member?
 ---------------------------------------------------------------------------------------------------- */
